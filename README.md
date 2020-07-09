@@ -1,15 +1,19 @@
 # Summary
 
-A whiteboard for sharing with Zoom or Google Meet.
+This is an adaptor which helps to share,
+via Zoom or Google Meet, an SVG drawing prepared with [Inkscape](https://inkscape.org/).
 
-Opens a GUI window, then watches a directory containing some SVG files. 
-Once an SVG file changes, show it in the window.
+Acts as a simple __internet whiteboard__.
 
-The GUI window can then be shared via Zoom or Google Meet. 
+`SVGWatch` opens a GUI window, then watches a directory containing some SVG files. 
+You edit `SVG` files with [Inkscape](https://inkscape.org/).
+Once an SVG file changes (is saved), it is drawn or re-drawn  in the `SVGWatch` window.
+The window can then be shared via Zoom or Google Meet. 
 
-I recommend [Inkscape](https://inkscape.org/) for drawing SVG.
-Of course, one can just share the Inkscape window directly.
-However, there are some advantages in using `SVGWatch` as an "adaptor",
+__Question:__ why not just share the Inkscape window directly?
+
+__Answer:__ when giving a lecture, or collaborating online, 
+there are serious advantages in using an adaptor,
 see [Notes on Inkscape](#inkscape-hints) below.
 
 # Installation
