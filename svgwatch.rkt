@@ -59,6 +59,7 @@
   (displayln "-- reloading SVG: ")
   (displayln p)
   (when (and
+         ((string-length p) . > . 3)
          (equal? ".svg" (substring p (- (string-length p) 4)))
          (< (+ (string->number (rest-after-activity)) time-of-last-change) (current-inexact-milliseconds))
          )
