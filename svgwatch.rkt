@@ -35,22 +35,6 @@
 
 (define time-of-last-change 0)
 
-(define (snapshot f)
-  (let* ([snap-dir (build-path (path-only f) "snapshots")]
-         [base-name (file-name-from-path f)]
-         [d (current-date)]
-         )
-    (copy-file
-     f
-     (build-path snap-dir (string->path (format "~a-~a-~a_~a:~a:~a.svg"
-                                                (date-year d)
-                                                (~r (date-month d) #:min-width 2 #:pad-string "0")
-                                                (~r (date-day d) #:min-width 2 #:pad-string "0")
-                                                (~r (date-hour d) #:min-width 2 #:pad-string "0")
-                                                (~r (date-minute d) #:min-width 2 #:pad-string "0")
-                                                (~r (date-second d) #:min-width 2 #:pad-string "0"))))
-     )))
-
 (define window
   (new frame%
        [label dir-to-watch]
