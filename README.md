@@ -8,7 +8,7 @@ Acts as a simple __internet whiteboard__.
 `SVGWatch` opens a GUI window, then watches a directory containing some SVG files. 
 You edit `SVG` files with [Inkscape](https://inkscape.org/).
 Once an SVG file changes (is saved), it is drawn or re-drawn  in the `SVGWatch` window.
-The window can then be shared via Zoom or Google Meet. 
+You share the window via Zoom or Google Meet. 
 
 __Question:__ why not just share the Inkscape window directly?
 
