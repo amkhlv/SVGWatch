@@ -20,9 +20,11 @@ see [Notes on Inkscape](#inkscape-hints) below.
 
     sudo aptitude install racket
 
-Then install `file-watchers` package:
+Then install some Racket packages:
 
     raco pkg install file-watchers
+
+    raco pkg install rsvg
 
 Then build executable:
 
